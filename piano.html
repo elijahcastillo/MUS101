@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/global.css" />
+    <link rel="stylesheet" href="static/css/piano.css" />
+    <link rel="stylesheet" href="static/css/home.css" />
+
+    <title>MUS 101 Final Project</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">MUS 101 Final Project</div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="/">Home</a></li>
+          <!-- <li><a href="/">About</a></li> -->
+
+          <li class="services">
+            <a href="/">genre1</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="/">Artist 1 </a></li>
+              <li><a href="/">Artist 2</a></li>
+              <!-- <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 3</a></li>
+              <li><a href="/">Dropdown 4</a></li> -->
+            </ul>
+          </li>
+
+          <li class="services">
+            <a href="/">Rap</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="/">Artist 1 </a></li>
+              <li><a href="/">Artist 2</a></li>
+              <!-- <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 3</a></li>
+              <li><a href="/">Dropdown 4</a></li> -->
+            </ul>
+          </li>
+
+          <li><a href="/piano.html">Piano</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="piano_container">
+      <!-- Section 1 -->
+
+      <div class="piano_key_container">
+        <div class="piano_white_key" data-key="C1">
+          <div class="piano_black_key" data-key="Csharp1"></div>
+        </div>
+        <div class="piano_white_key" data-key="D1">
+          <div class="piano_black_key" data-key="Dsharp1"></div>
+        </div>
+        <div class="piano_white_key" data-key="E1"></div>
+        <div class="piano_white_key" data-key="F1">
+          <div class="piano_black_key" data-key="Fsharp1"></div>
+        </div>
+        <div class="piano_white_key" data-key="G1">
+          <div class="piano_black_key" data-key="Gsharp1"></div>
+        </div>
+        <div class="piano_white_key" data-key="A1">
+          <div class="piano_black_key" data-key="Asharp1"></div>
+        </div>
+        <div class="piano_white_key" data-key="B1"></div>
+
+        <!-- Section 2 -->
+        <div class="piano_white_key" data-key="C2">
+          <div class="piano_black_key" data-key="Csharp2"></div>
+        </div>
+        <div class="piano_white_key" data-key="D2">
+          <div class="piano_black_key" data-key="Dsharp2"></div>
+        </div>
+        <div class="piano_white_key" data-key="E2"></div>
+        <div class="piano_white_key" data-key="F2">
+          <div class="piano_black_key" data-key="Fsharp2"></div>
+        </div>
+        <div class="piano_white_key" data-key="G2">
+          <div class="piano_black_key" data-key="Gsharp2"></div>
+        </div>
+        <div class="piano_white_key" data-key="A2">
+          <div class="piano_black_key" data-key="Asharp2"></div>
+        </div>
+        <div class="piano_white_key" data-key="B2"></div>
+      </div>
+    </div>
+    <script src="static/js/piano.js"></script>
+  </body>
+</html>

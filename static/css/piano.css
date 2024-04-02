@@ -1,0 +1,83 @@
+:root {
+  --piano_width: 70vw;
+  --piano_height: calc(var(--piano_width) * 0.2);
+  --border-width: calc(var(--piano_width) * 0.0015);
+  --border-color: #aaaaaa;
+
+  --white_key_count: 14;
+  --white_key_height: var(--piano_height);
+  --white_key_width: calc(var(--piano_width) / var(--white_key_count));
+  --white_key_color: #eeeeee;
+
+  --black_key_count: 10;
+  --black_key_height: calc(var(--white_key_height) * 0.55);
+  --black_key_width: calc(var(--white_key_width) * 0.55);
+  --black_key_offset: calc(var(--white_key_width) - (var(--black_key_width) / 2));
+
+  --black_key_color: #222222;
+}
+
+.piano_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  /* height: 100vh; */
+  padding: 40px 0px;
+}
+
+.piano_key_container {
+  width: var(--piano_width);
+  height: var(--piano_height);
+  display: flex; /* This will align the keys horizontally */
+}
+
+.piano_white_key {
+  cursor: pointer;
+
+  position: relative;
+  width: var(--white_key_width);
+  height: var(--white_key_height);
+  background-color: var(--white_key_color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 5px 8px -3px rgba(0, 0, 0, 0.75);
+  text-align: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+  padding-bottom: 10px;
+
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.piano_black_key {
+  cursor: pointer;
+  position: absolute;
+  width: var(--black_key_width);
+  height: var(--black_key_height);
+  background-color: var(--black_key_color);
+  z-index: 3;
+  left: var(--black_key_offset);
+  top: 0;
+  box-shadow: 0px 5px 8px -3px rgba(0, 0, 0, 0.75);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.piano_white_key .pressed {
+  background-color: #4f4f4f;
+}
+
+.pressed {
+  background-color: #c8c8c8;
+  box-shadow: 0px 2px 8px -3px rgba(0, 0, 0, 0.75);
+}
