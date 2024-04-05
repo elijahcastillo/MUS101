@@ -8,6 +8,8 @@
 
 .artist-info-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   /* justify-content: center; */
   gap: 20px;
@@ -18,8 +20,9 @@
 }
 
 .artist-image {
-  max-width: 100%;
-  height: auto;
+  width: 400px; /* Adjust based on your preference */
+  height: 400px; /* Adjust based on your preference */
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -60,12 +63,14 @@
   margin-top: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .artist-info-wrapper {
     flex-direction: column;
   }
 
   .artist-image {
-    max-width: 80%;
+    width: 80%; /* Or any other size that fits better on small screens */
+    height: auto; /* This will keep the aspect ratio intact */
+    margin: auto;
   }
 }

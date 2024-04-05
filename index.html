@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="static/css/global.css" />
     <link rel="stylesheet" href="static/css/home.css" />
     <link rel="stylesheet" href="static/css/piano.css" />
-    <link rel="stylesheet" href="static/css/artist_cards.css" />
+    <!-- <link rel="stylesheet" href="static/css/artist_cards.css" /> -->
     <link rel="stylesheet" href="static/css/artist.css" />
 
     <title>MUS 101 Final Project</title>
@@ -28,15 +28,12 @@
           <!-- <li><a href="/">About</a></li> -->
 
           <li class="services">
-            <a href="/">genre1</a>
+            <a href="./rock.html">Rock</a>
 
             <!-- DROPDOWN MENU -->
             <ul class="dropdown">
-              <li><a href="/">Artist 1 </a></li>
-              <li><a href="/">Artist 2</a></li>
-              <!-- <li><a href="/">Dropdown 2</a></li>
-              <li><a href="/">Dropdown 3</a></li>
-              <li><a href="/">Dropdown 4</a></li> -->
+              <a href="./rock.html#joel"><li>Billy Joel</li></a>
+              <a href="./rock.html#queen"><li>Queen</li></a>
             </ul>
           </li>
 
@@ -47,9 +44,6 @@
             <ul class="dropdown">
               <li><a href="/">Artist 1 </a></li>
               <li><a href="/">Artist 2</a></li>
-              <!-- <li><a href="/">Dropdown 2</a></li>
-              <li><a href="/">Dropdown 3</a></li>
-              <li><a href="/">Dropdown 4</a></li> -->
             </ul>
           </li>
 
@@ -58,57 +52,14 @@
       </ul>
     </nav>
     <div class="container">
-      <div class="artist-full-section">
-        <div class="artist-info-wrapper">
-          <img src="static/images/200x100.png" alt="Artist Image" class="artist-image" />
-          <div class="artist-details">
-            <h2>John Doe</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rerum tenetur placeat eligendi neque voluptates ex aperiam non, voluptate qui vero laboriosam magni unde odit! Nihil
-              dolorem dolore distinctio odio?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime accusamus animi eaque exercitationem laudantium nesciunt facere quis earum reiciendis, obcaecati quam aperiam
-              fuga, minus fugit autem quia odit iure?
-            </p>
-            <div class="artist-links">
-              <a href="#">Official Website</a>
-              <a href="#">Spotify</a>
-              <a href="#">YouTube</a>
-            </div>
-            <audio controls class="artist-audio">
-              <source src="https://www.example.com/path/to/sample-song.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
+      <section class="landing">
+        <div class="landing-content">
+          <h1>Welcome to the Music Exploration Website</h1>
+          <p>Discover differnt artists from the legends of rock, rap, and more. Dive into the history, the hits, and the heart of the music. Along with an interactive online piano</p>
+          <a href="./rock.html" class="get-started-button">Get Started</a>
         </div>
-      </div>
-
-      <div class="artist-full-section">
-        <div class="artist-info-wrapper">
-          <img src="static/images/200x100.png" alt="Artist Image" class="artist-image" />
-          <div class="artist-details">
-            <h2>John Doe</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatum quaerat officiis atque eligendi ipsum reprehenderit voluptates quidem, autem explicabo, sit eius quas, molestiae
-              fugiat nulla sequi facilis iusto fuga?
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sunt, non cum totam asperiores mollitia reprehenderit est doloribus, neque, rem molestiae recusandae amet facilis sit.
-              Nesciunt amet quia obcaecati dolorum!
-            </p>
-            <div class="artist-links">
-              <a href="#">Official Website</a>
-              <a href="#">Spotify</a>
-              <a href="#">YouTube</a>
-            </div>
-            <audio controls class="artist-audio">
-              <source src="https://www.example.com/path/to/sample-song.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-        </div>
-      </div>
+        <img src="static/images/landing.webp" alt="Music Exploration" class="landing-image" />
+      </section>
     </div>
   </body>
 </html>
