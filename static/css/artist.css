@@ -49,6 +49,7 @@
   background-color: #007bff;
   color: #ffffff;
   padding: 10px 15px;
+  margin: 5px 0px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -69,7 +70,7 @@
   }
 
   .artist-image {
-    width: 80%; /* Or any other size that fits better on small screens */
+    width: 100%; /* Or any other size that fits better on small screens */
     height: auto; /* This will keep the aspect ratio intact */
     margin: auto;
   }
